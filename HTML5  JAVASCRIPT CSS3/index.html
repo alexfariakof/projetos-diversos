@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">	
+		<title>Uma P?gina HTML5 B?sica</title>
+		<script id="s1">
+			document.onkeydown = function(event){
+				if(event.keyCode==123){
+					return false;
+				}
+				else if(event.ctrlKey && event.shiftKey && event.keyCode==73){        
+					return false;  //Prevent from ctrl+shift+i
+				}
+			}
+		</script>
+	</head>
+	
+	
+	<body oncontextmenu="return false;" >	
+		<label for="audio">Audio
+			<audio src="DizQueMeAma.ogg" controls="true">
+		</audio></label><br>
+		<label for="audio">Audio composto
+			<audio controls="true" autoplay="true">			
+				<!-- <source src="Shoryuken.ogg"> -->
+				<source src="Shoryuken.mp3">
+				<source src="Shoryuken.wma">
+				<p>Fa?a o <a href="Shoryuken.mp3">download do audio</a>.</p>
+			</audio>
+		</label><br>
+		<!--
+		<label for="video">
+			<video controls="true" width="400" height="300">
+				<source src="gordinho.mp4">
+				<source src="gordinho.wmv">
+				<p>Fa?a o <a href="gordinho.mp4">download do v?deo</a>.</p>
+			</video>
+		</label>		
+		<br>
+		-->
+		<video controls="controls" width="854" height="480" class="video-stream" data-youtube-id="gaIqBVDePjk" src="https://youtu.be/gaIqBVDePjk?list=FLy7ZG1ATFMshqTk6L6w2Qrw&amp;t=209">
+	   </video>
+		<form action="/index.html">	
+			<label for="Login">
+				Login:<input id="txtLogin" name="txtLogin" type="text" placeholder="Insira aqui seu login" required=""><hr>
+			</label>
+			<label for="Senha">
+				Senha:<input id="txtSenha" name="txtSenha" type="password" placeholder="Senha" required=""><hr>
+			</label>
+			<input type="submit" text="Limpar" formnovalidate=""> <hr>
+			<input type="submit" text="Entrar"><hr>
+		</form>
+    	<form novalidate="" action="/index.html">	
+			CEP:<input name="CEP" id="txtCEP" required="" pattern="\d{5}-?\d{3}" oninput="javascript:function {alert(0);}"><hr>
+			Telefone:<input type="tel"><hr>
+			Pesquisa:<input type="search" placeholder="Pesquisa"><hr>
+			Email:<input type="email"><hr>
+			URL:<input type="url"><hr>
+			DateTime:<input type="datetime"><hr>
+			Data:<input type="date"><hr>
+			M?s:<input type="month"><hr>
+			Week:<input type="week"><hr>
+			Hora:<input type="time"><hr>
+			Data e Hora Local :<input type="datetime-local"><hr>
+			<input name="txtNumber" type="number" value="12.4" step="0.2" 12="" min="0" max="20"><hr>
+			<input name="txtRange" type="range" value="12.4" step="0.2" 12="" min="0" max="20"><hr>
+			Cor:<input type="color"><hr>
+			Place Holder <input name="q" placeholder="Search here">	
+			<input type="submit" text="Salvar"> <hr>
+		</form>
+		
+		<details>
+	<summary>Copiando <progress max="39248" value="14718"> 37,5%</progress></summary>
+	<dl>
+		<dt>Tamanho total:</dt>
+		<dd>39.248KB</dd>
+		<dt>Transferido:</dt>
+		<dd>14.718</dd>
+		<dt>Taxa de transfer?ncia:</dt>
+		<dd>127KB/s</dd>
+		<dt>Nome do arquivo:</dt>
+		<dd>HTML5.mp4</dd>
+		</dl>
+	</details>
+	
+	
+	
+
+</body></html>

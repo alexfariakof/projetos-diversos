@@ -1,0 +1,19 @@
+﻿<Window x:Class="CadastroPessoas._Task.WPF.AdicionarPessoas"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastroPessoas._Task.WPF"
+        mc:Ignorable="d"
+        Title="AdicionarPessoas" Height="196.324" Width="300">
+    <Grid>
+        <Label x:Name="label" Content="Nome" HorizontalAlignment="Left" Margin="24,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="83,33,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="199"/>
+        <Label x:Name="label1" Content="Idade" HorizontalAlignment="Left" Margin="24,58,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Endereço" HorizontalAlignment="Left" Margin="24,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIdade" HorizontalAlignment="Left" Height="23" Margin="83,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="83,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="83,129,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿Enable-Migrations -ProjectName ProdutoMarca.Persistencia.EF -StartUpProjectName ProdutoMarca.Persistencia.EF
+
+
+Add-Migration "Migration_Inicial_Criacao_Produto_Marca" -ProjectName ProdutoMarca.Persistencia.EF -StartUpProjectName ProdutoMarca.Persistencia.EF
+
+
+Atualizando Base de Dados
+
+Update-Database  -ProjectName ProdutoMarca.Persistencia.EF -StartUpProjectName ProdutoMarca.Persistencia.EF -verbose

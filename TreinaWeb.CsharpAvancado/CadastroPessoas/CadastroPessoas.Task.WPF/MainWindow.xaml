@@ -1,0 +1,15 @@
+﻿<Window x:Class="CadastroPessoas._Task.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastroPessoas._Task.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid >
+        <DataGrid x:Name="dtgPessoas" HorizontalAlignment="Left" Margin="20,28,0,0" VerticalAlignment="Top" Height="141" Width="487"/>
+        <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="20,197,0,0" VerticalAlignment="Top" Width="75" Click="btnAdicionar_Click"/>
+        <ProgressBar x:Name="pbDtgPessoas" HorizontalAlignment="Left" Height="10" Margin="20,169,0,0" VerticalAlignment="Top" Width="487" Maximum="5000" />
+        <Button x:Name="btnCarregarAssicrono" Content="Carregar Assincrono" HorizontalAlignment="Left" Margin="20,233,0,0" VerticalAlignment="Top" Width="159" Click="btnCarregarAssicrono_Click" />
+    </Grid>
+</Window>
